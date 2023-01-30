@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Calculator</title>
+    <style>
+        body {
+    
+ background-color:green;
+}
+.btn
+{
+    background-color:blue;
+    text-align:center;
+    color:white;
+    height:50px;
+    width:60px;
+    margin-bottom:10px;
+}
+.txt
+{
+    background-color:blue;
+    color:white;
+    height:50px;
+    width:240px;
+    margin-bottom:10px;
+}
+.fl
+{
+    padding-top:100px;
+    border-spacing:50px;
+
+
+}
+    </style>
+  </head>
+  <body>
+    <form class="fl" align="center">
+      <input type="text" id="display" class="txt" disabled>
+      <br>
+      <input type="button" value="1" onclick="display.value+= '1'" class="btn">
+      <input type="button" value="2" onclick="display.value += '2'" class="btn">
+      <input type="button" value="3" onclick="display.value += '3'" class="btn">
+      <input type="button" value="+" onclick="display.value += '+'" class="btn">
+      <br>
+      <input type="button" value="4" onclick="display.value += '4'" class="btn">
+      <input type="button" value="5" onclick="display.value += '5'" class="btn">
+      <input type="button" value="6" onclick="display.value += '6'" class="btn">
+      <input type="button" value="-" onclick="display.value += '-'" class="btn">
+      <br>
+      <input type="button" value="7" onclick="display.value += '7'" class="btn">
+      <input type="button" value="8" onclick="display.value += '8'" class="btn">
+      <input type="button" value="9" onclick="display.value += '9'" class="btn">
+      <input type="button" value="*" onclick="display.value += '*'" class="btn">
+      <br>
+      <input type="button" value="c" onclick="display.value =''" class="btn">
+      <input type="button" value="0" onclick="display.value += '0'" class="btn">
+      <input type="button" value="=" onclick="display.value = eval(display.value)" class="btn">
+      <input type="button" value="/" onclick="display.value += '/'" class="btn">
+    </form>
+  </body>
+</html>
